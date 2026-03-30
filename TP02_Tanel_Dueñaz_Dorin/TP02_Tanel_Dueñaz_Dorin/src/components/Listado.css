@@ -1,0 +1,9 @@
+.listado {
+  width: 350px;
+}
+
+.listado h2 {
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
