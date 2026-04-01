@@ -15,13 +15,21 @@ function App() {
     },
   ]);
 
+  const agregarCita = (cita) => {
+    setCitas([...citas, cita]);
+  };
+
+  const eliminarCita = (index) => {
+    setCitas(citas.filter((_, i) => i !== index));
+  };
+
   return (
     <div className="container">
       <SectionTitle level={1}>ADMINISTRADOR DE PACIENTES</SectionTitle>
 
       <div className="contenido">
-        <Formulario />
-        <Listado citas={citas} />
+        <Formulario agregarCita={agregarCita} />
+        <Listado citas={citas} eliminarCita={eliminarCita} />
       </div>
     </div>
   );

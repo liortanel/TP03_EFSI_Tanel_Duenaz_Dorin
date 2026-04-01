@@ -1,6 +1,6 @@
-function SectionTitle({ level = 2, children, className = "" }) {
+function SectionTitle({ level, children }) {
   const Tag = `h${level}`;
-  return <Tag className={className}>{children}</Tag>;
+  return <Tag>{children}</Tag>;
 }
 
 export default SectionTitle;
