@@ -1,23 +1,15 @@
 body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: linear-gradient(180deg, #d4145a, #fbb03b);
-  min-height: 100vh;
+  background: linear-gradient(to right, #cf007c, #f32ba3);
 }
 
 .container {
-  text-align: center;
+  width: 900px;
+  margin: 0 auto;
   padding: 20px;
-}
-
-h1 {
-  color: white;
-  margin-bottom: 30px;
 }
 
 .contenido {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 40px;
-  align-items: flex-start;
 }

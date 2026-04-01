@@ -7,11 +7,11 @@ function Formulario() {
     <div className="formulario">
       <SectionTitle level={2}>CREAR MI CITA</SectionTitle>
 
-      <FormInput placeholder="Nombre Mascota" />
-      <FormInput placeholder="Nombre dueño de la mascota" />
-      <FormInput type="date" />
-      <FormInput type="time" />
-      <FormInput type="textarea" placeholder="Sintomas" />
+      <FormInput label="Nombre Mascota" placeholder="Nombre Mascota" />
+      <FormInput label="Nombre Dueño" placeholder="Nombre dueño de la mascota" />
+      <FormInput label="Fecha" type="date" />
+      <FormInput label="Hora" type="time" />
+      <FormInput label="Sintomas" type="textarea" />
 
       <button>AGREGAR CITA</button>
     </div>

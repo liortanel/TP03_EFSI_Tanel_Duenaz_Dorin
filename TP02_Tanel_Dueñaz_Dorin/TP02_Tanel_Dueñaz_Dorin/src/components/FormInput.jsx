@@ -1,25 +1,14 @@
-function FormInput({ type = "text", placeholder = "", value, onChange, className = "", ...rest }) {
-  if (type === "textarea") {
-    return (
-      <textarea
-        className={className}
-        placeholder={placeholder}
-        value={value}
-        onChange={onChange}
-        {...rest}
-      />
-    );
-  }
-
+function FormInput({ label, type = "text", placeholder }) {
   return (
-    <input
-      type={type}
-      className={className}
-      placeholder={placeholder}
-      value={value}
-      onChange={onChange}
-      {...rest}
-    />
+    <>
+      <label>{label}</label>
+
+      {type === "textarea" ? (
+        <textarea placeholder={placeholder}></textarea>
+      ) : (
+        <input type={type} placeholder={placeholder} />
+      )}
+    </>
   );
 }
 
