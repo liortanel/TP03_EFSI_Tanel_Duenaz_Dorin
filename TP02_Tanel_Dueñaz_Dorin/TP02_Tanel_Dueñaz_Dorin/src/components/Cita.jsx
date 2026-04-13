@@ -1,4 +1,10 @@
 function Cita({ cita, index, eliminarCita }) {
+  const handleEliminar = () => {
+    if (confirm("¿Estás seguro de eliminar esta cita?")) {
+      eliminarCita(index);
+    }
+  };
+
   return (
     <div className="cita">
       <p>Mascota: <span>{cita.mascota}</span></p>
@@ -9,7 +15,7 @@ function Cita({ cita, index, eliminarCita }) {
 
       <button
         className="button eliminar u-full-width"
-        onClick={() => eliminarCita(index)}
+        onClick={handleEliminar}
       >
         Eliminar ×
       </button>
